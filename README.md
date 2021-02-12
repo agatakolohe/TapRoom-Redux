@@ -7,12 +7,20 @@
 <div align="center">
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 </div>
-<h3 align="center">React Fundamentals | Initalized: 02-12-2021</h3>
+<h3 align="center">React Fundamentals | Initialized: 02-12-2021</h3>
 <h4 align="center"> By Agata Kolodziej</h4>
 
 ## Description
 
 TODO
+
+<div align="center">
+
+## Component Diagram
+
+![Component Diagram](./READMEAssets/componentTree.png)
+
+</div>
 
 ## User Stories
 
