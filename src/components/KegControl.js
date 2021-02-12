@@ -2,6 +2,7 @@ import React from "react";
 import NewKegForm from "./NewKegForm";
 import KegList from "./KegList";
 import KegDetail from "./KegDetail";
+import EditKegForm from "./EditKegForm";
 
 class KegControl extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class KegControl extends React.Component {
       kegFormVisibleOnPage: false,
       masterKegList: [],
       selectedKeg: null,
+      editing: false,
     };
   }
 
@@ -35,6 +37,21 @@ class KegControl extends React.Component {
     );
     this.setState({ masterKegList: newMasterKegList, selectedKeg: null });
   };
+  //edit keg
+  handleEditClick = () => {
+    this.setState({ editing: true });
+  };
+  //edit keg list
+  handleEditingKegInList = (kegToEdit) => {
+    const editedMasterKegList = this.state.masterKegList
+      .filter((keg) => keg.id !== this.state.selectedKeg.id)
+      .concat(kegToEdit);
+    this.setState({
+      masterKegList: editedMasterKegList,
+      editing: false,
+      selectedKeg: null,
+    });
+  };
   //sell pint(decrease pint quantity)
   handleSellPint = (id) => {
     const selectedKeg = this.state.masterKegList.filter(
@@ -49,6 +66,7 @@ class KegControl extends React.Component {
       this.setState({
         kegFormVisibleOnPage: false,
         selectedKeg: null,
+        editing: false,
       });
     } else {
       this.setState((prevState) => ({
@@ -60,11 +78,21 @@ class KegControl extends React.Component {
   render() {
     let currentVisibleState = null;
     let buttonText = null;
-    if (this.state.selectedKeg != null) {
+
+    if (this.state.editing) {
+      currentVisibleState = (
+        <EditKegForm
+          keg={this.state.selectedKeg}
+          onEditKeg={this.handleEditingKegInList}
+        />
+      );
+      buttonText = "Return to Keg List";
+    } else if (this.state.selectedKeg != null) {
       currentVisibleState = (
         <KegDetail
           keg={this.state.selectedKeg}
           onClickingDelete={this.handleDeletingKeg}
+          onClickingEdit={this.handleEditClick}
         />
       );
       buttonText = "Return to Keg List";
