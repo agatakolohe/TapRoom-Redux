@@ -86,6 +86,7 @@ class KegControl extends React.Component {
     return (
       <React.Fragment>
         {currentVisibleState}
+        <hr />
         <button class="btn btn-primary" onClick={this.handleClick}>
           {buttonText}
         </button>

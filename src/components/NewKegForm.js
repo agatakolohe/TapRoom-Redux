@@ -46,7 +46,6 @@ function NewKegForm(props) {
             class="form-control"
           />
           <hr />
-          ``
         </div>
         <div class="form-group">
           <h4>Alcohol by Volume(ABV): </h4>
@@ -64,6 +63,8 @@ function NewKegForm(props) {
             type="number"
             name="pintQuantity"
             placeholder="124 = full keg"
+            min="1"
+            max="124"
             class="form-control"
           />
           <hr />

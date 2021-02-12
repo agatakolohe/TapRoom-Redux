@@ -10,7 +10,7 @@ function Keg(props) {
         <h4>ABV: {props.abv}</h4>
         <p>${props.price}</p>
         <h4>
-          Pints:{" "}
+          Pints Left in Keg:{" "}
           {props.pintQuantity > 0 ? (
             props.pintQuantity
           ) : (
