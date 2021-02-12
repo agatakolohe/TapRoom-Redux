@@ -1,7 +1,8 @@
 <div align="center">
 
-# Tap Room
+# Hip Hops Tap Room
 
+<img src="https://ih1.redbubble.net/image.2080344532.5562/st,small,507x507-pad,600x600,f8f8f8.jpg" width="200px" height="auto">
 </div>
 
 <div align="center">
@@ -12,7 +13,7 @@
 
 ## Description
 
-TODO
+Thirteenth independent project for Epicodus to demonstrate my understanding of React Fundamentals. This is a basic React application that uses local and shared state with full CRUD functionality. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
 
 <div align="center">
 
@@ -39,7 +40,6 @@ TODO
 
 1. Internet browser
 2. A code editor such as VSCode to view and edit the code
-   TODO
 
 ##### Open Locally
 
@@ -47,6 +47,8 @@ TODO
 - Click on the green "Code" button and copy the repository URL
 - Open your terminal and use the command `git clone https://github.com/agatakolohe/TapRoom.git` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
+  - Open terminal and navigate to tap-room directory
+  - Use the command `npm install` to download and install all necessary packages for the project to function
 
 <details>
 <summary>Getting Started with Create React App</summary>
@@ -124,20 +126,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 #### View In Browser
 
-TODO
+- To Build and view in browser
+  - Navigate to tap-room directory and use the command `npm start`
 
 ## Known Bugs
 
-TODO
+No known bugs
 
 ## Support and Contact Details
 
-If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
-TODO
+You can use console.log() statements and `debugger` to debug React applications. [React Developer Tools](https://react-devtools-tutorial.now.sh/) is available for both [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and Firefox. If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
 
 ## Technologies Used
 
-TODO
+- CSS
+- Babel
+- Bootstrap
+- `npx create-react-app`
+- Git | GitHub
+- JavaScript ES6
+- JSX
+- Node
+- npm
+- React
+- VS Code
+- webpack
 
 ### License
 

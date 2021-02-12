@@ -9,8 +9,8 @@ function KegDetail(props) {
       <h2>Name: {keg.name}</h2>
       <h3>Brand: {keg.brand}</h3>
       <h4>ABV: {keg.abv}</h4>
-      <p>Price: {keg.price}</p>
-      <h5>
+      <h5>Price: {keg.price}</h5>
+      <h4>
         Pints Left in Keg:{" "}
         {keg.pintQuantity > 0 ? (
           keg.pintQuantity
@@ -19,7 +19,7 @@ function KegDetail(props) {
             Can I kick it? (Yes, you can!) (Out of Stock)
           </div>
         )}
-      </h5>
+      </h4>
       <hr />
       <button
         class="btn btn-danger"

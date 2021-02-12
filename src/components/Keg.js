@@ -8,7 +8,7 @@ function Keg(props) {
         <h2>Name: {props.name}</h2>
         <h3>Brand: {props.brand}</h3>
         <h4>ABV: {props.abv}</h4>
-        <p>${props.price}</p>
+        <h5>${props.price}</h5>
         <h4>
           Pints Left in Keg:{" "}
           {props.pintQuantity > 0 ? (
