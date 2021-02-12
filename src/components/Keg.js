@@ -14,7 +14,10 @@ function Keg(props) {
           {props.pintQuantity > 0 ? (
             props.pintQuantity
           ) : (
-            <div style={{ color: "red" }}> Kicked it! (Out of Stock)</div>
+            <div style={{ color: "red" }}>
+              {" "}
+              Can I kick it? (Yes, you can!) (Out of Stock)
+            </div>
           )}
         </h4>
       </div>
