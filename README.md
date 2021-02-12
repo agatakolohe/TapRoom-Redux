@@ -128,6 +128,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - To Build and view in browser
   - Navigate to tap-room directory and use the command `npm start`
+  - Enjoy the application!
 
 ## Known Bugs
 
