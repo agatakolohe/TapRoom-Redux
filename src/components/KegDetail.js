@@ -21,7 +21,7 @@ function KegDetail(props) {
         )}
       </h4>
       <hr />
-      <button onClick={props.onClickingEdit}>
+      <button class="btn btn-success" onClick={props.onClickingEdit}>
         Hold It Now, Hit It (Update Keg){" "}
       </button>
       <button

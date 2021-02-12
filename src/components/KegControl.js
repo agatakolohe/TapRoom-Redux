@@ -4,6 +4,11 @@ import KegList from "./KegList";
 import KegDetail from "./KegDetail";
 import EditKegForm from "./EditKegForm";
 
+const centerAlign = {
+  textAlign: "center",
+  margin: "10%",
+};
+
 class KegControl extends React.Component {
   constructor(props) {
     super(props);
@@ -114,10 +119,19 @@ class KegControl extends React.Component {
     return (
       <React.Fragment>
         {currentVisibleState}
-        <hr />
-        <button class="btn btn-primary" onClick={this.handleClick}>
-          {buttonText}
-        </button>
+        <div style={centerAlign}>
+          <button class="btn btn-warning" onClick={this.handleClick}>
+            {buttonText}
+          </button>
+          <br />
+          <br />
+          <img
+            src="http://www.clker.com/cliparts/a/7/3/7/11954248811889296603johnny_automatic_pony_keg.svg.hi.png"
+            width="10%"
+            height="auto"
+            alt="Beer Keg"
+          />
+        </div>
       </React.Fragment>
     );
   }
