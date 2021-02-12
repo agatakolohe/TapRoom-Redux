@@ -1,4 +1,47 @@
-# Getting Started with Create React App
+<div align="center">
+
+# Tap Room
+
+</div>
+
+<div align="center">
+<img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
+</div>
+<h3 align="center">React Fundamentals | Initalized: 02-12-2021</h3>
+<h4 align="center"> By Agata Kolodziej</h4>
+
+## Description
+
+TODO
+
+## User Stories
+
+<details>
+  <summary>Expand</summary>
+
+- As a user, I want to see a list/menu of all available kegs. For each keg, I want to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
+- As a user, I want to submit a form to add a new keg to a list.
+- As a user, I want to be able to click on a keg to see its detail page.
+- As a user, I want to see how many pints are left in a keg. Hint: A full keg has roughly 124 pints.
+- As a user, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1. Pints should not be able to go below 0.
+
+</details>
+
+##### Software Requirements
+
+1. Internet browser
+2. A code editor such as VSCode to view and edit the code
+   TODO
+
+##### Open Locally
+
+- Click on the link to my repository: [My Repository](https://github.com/agatakolohe/TapRoom.git)
+- Click on the green "Code" button and copy the repository URL
+- Open your terminal and use the command `git clone https://github.com/agatakolohe/TapRoom.git` into the directory you would like to clone the repository
+- Open in text editor to view code and make changes
+
+<details>
+<summary>Getting Started with Create React App</summary>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +111,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+#### View In Browser
+
+TODO
+
+## Known Bugs
+
+TODO
+
+## Support and Contact Details
+
+If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
+TODO
+
+## Technologies Used
+
+TODO
+
+### License
+
+This software is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+Copyright (c) 2021 Agata Kolodziej <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Q_3EVY7j95tTyemJwWxMR7jwvUK7gPe0_w&usqp=CAU" width="2%" height="auto">
