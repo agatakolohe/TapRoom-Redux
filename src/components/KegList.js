@@ -3,10 +3,15 @@ import Keg from "./Keg";
 import PropTypes from "prop-types";
 
 function KegList(props) {
+  const listStyles = {
+    backgroundColor: "#c98542",
+    opacity: "0.9",
+    padding: "4%",
+    color: "black",
+  };
   const { kegList, onClickingSellPint } = props;
   return (
     <React.Fragment>
-      <hr />
       {kegList.map((keg) => (
         <Keg
           whenKegClicked={props.onKegSelection}

@@ -6,7 +6,7 @@ import EditKegForm from "./EditKegForm";
 
 const centerAlign = {
   textAlign: "center",
-  margin: "10%",
+  margin: "5%",
 };
 
 class KegControl extends React.Component {
