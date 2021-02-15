@@ -8,7 +8,20 @@ function Keg(props) {
         <h2>Name: {props.name}</h2>
         <h3>Brand: {props.brand}</h3>
         <h4>ABV: {props.abv}</h4>
-        <h5>${props.price}</h5>
+        <hr />
+        <h5>
+          <span
+            style={{
+              color: "orange",
+              border: "2px dotted #98cb72",
+              padding: "1%",
+              margin: "3% 1% 3%",
+            }}
+          >
+            Price: ${props.price}
+          </span>
+        </h5>
+        <hr />
         <h4>
           Pints Left in Keg:{" "}
           {props.pintQuantity > 0 ? (
@@ -22,10 +35,10 @@ function Keg(props) {
         </h4>
       </div>
       <button
-        class="btn btn-warning"
+        class="btn btn-success"
         onClick={() => props.sellButton(props.id)}
       >
-        One Beer
+        One Beer (Sell Pint)
       </button>
     </React.Fragment>
   );

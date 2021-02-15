@@ -4,27 +4,26 @@ import PropTypes from "prop-types";
 
 function KegList(props) {
   const listStyles = {
-    backgroundColor: "#c98542",
-    opacity: "0.9",
-    padding: "4%",
-    color: "black",
+    color: "white",
   };
   const { kegList, onClickingSellPint } = props;
   return (
     <React.Fragment>
-      {kegList.map((keg) => (
-        <Keg
-          whenKegClicked={props.onKegSelection}
-          name={keg.name}
-          brand={keg.brand}
-          price={keg.price}
-          abv={keg.abv}
-          pintQuantity={keg.pintQuantity}
-          id={keg.id}
-          key={keg.id}
-          sellButton={onClickingSellPint}
-        />
-      ))}
+      <div style={listStyles}>
+        {kegList.map((keg) => (
+          <Keg
+            whenKegClicked={props.onKegSelection}
+            name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            abv={keg.abv}
+            pintQuantity={keg.pintQuantity}
+            id={keg.id}
+            key={keg.id}
+            sellButton={onClickingSellPint}
+          />
+        ))}
+      </div>
     </React.Fragment>
   );
 }
