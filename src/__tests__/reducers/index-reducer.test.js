@@ -26,4 +26,10 @@ describe("rootReducer", () => {
       formVisibleReducer(undefined, { type: null })
     );
   });
+
+  test("Check that initial state of editingReducer matches root reducer", () => {
+    expect(store.getState().editing).toEqual(
+      editingReducer(true, { type: null })
+    );
+  });
 });
