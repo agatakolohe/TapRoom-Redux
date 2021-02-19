@@ -3,6 +3,7 @@ import { createStore } from "redux";
 import kegListReducer from "../../reducers/keg-list-reducer";
 import kegFormVisibleReducer from "../../reducers/form-visible-reducer";
 import editingReducer from "../../reducers/editing-reducer";
+import * as c from "../../actions/ActionTypes";
 
 let store = createStore(rootReducer);
 
@@ -35,7 +36,7 @@ describe("rootReducer", () => {
 
   test("Check that ADD_KEG action works for kegListReducer and root reducer", () => {
     const action = {
-      type: "ADD_KEG",
+      type: c.ADD_KEG,
       name: "Hoptimum",
       brand: "Sierra Nevada",
       price: "30",
@@ -61,7 +62,7 @@ describe("rootReducer", () => {
       },
     };
     const action = {
-      type: "DELETE_KEG",
+      type: c.DELETE_KEG,
       id: 1,
     };
     store.dispatch(action);
@@ -72,7 +73,7 @@ describe("rootReducer", () => {
 
   test("Check that TOGGLE_FORM action works for kegFormVisibleReducer and root reducer", () => {
     const action = {
-      type: "TOGGLE_FORM",
+      type: c.TOGGLE_FORM,
     };
     store.dispatch(action);
     expect(store.getState().kegFormVisibleOnPage).toEqual(
@@ -82,7 +83,7 @@ describe("rootReducer", () => {
 
   test("Check that TOGGLE_EDIT action works for editingReducer and root reducer", () => {
     const action = {
-      type: "TOGGLE_EDIT",
+      type: c.TOGGLE_EDIT,
     };
     store.dispatch(action);
     expect(store.getState().editing).toEqual(editingReducer(undefined, action));
