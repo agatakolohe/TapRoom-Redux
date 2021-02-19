@@ -28,12 +28,12 @@ function KegDetail(props) {
           )}
         </h4>
         <hr />
-        <button class="btn btn-success" onClick={props.onClickingEdit}>
+        <button className="btn btn-success" onClick={props.onClickingEdit}>
           Hold It Now, Hit It (Update Keg){" "}
         </button>
         <hr />
         <button
-          class="btn btn-danger"
+          className="btn btn-danger"
           onClick={() => props.onClickingDelete(keg.id)}
         >
           Push It Real Good (Delete Keg)

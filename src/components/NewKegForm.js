@@ -9,9 +9,9 @@ function NewKegForm(props) {
     props.onNewKegCreation({
       name: event.target.name.value,
       brand: event.target.brand.value,
-      price: event.target.price.value,
+      price: parseInt(event.target.price.value),
       abv: event.target.abv.value,
-      pintQuantity: event.target.pintQuantity.value,
+      pintQuantity: parseInt(event.target.pintQuantity.value),
       id: v4(),
     });
   }

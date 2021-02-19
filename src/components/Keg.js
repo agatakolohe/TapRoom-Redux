@@ -35,7 +35,7 @@ function Keg(props) {
         </h4>
       </div>
       <button
-        class="btn btn-success"
+        className="btn btn-success"
         onClick={() => props.sellButton(props.id)}
       >
         One Beer (Sell Pint)

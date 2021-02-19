@@ -120,7 +120,7 @@ class KegControl extends React.Component {
       <React.Fragment>
         {currentVisibleState}
         <div style={centerAlign}>
-          <button class="btn btn-warning" onClick={this.handleClick}>
+          <button className="btn btn-warning" onClick={this.handleClick}>
             {buttonText}
           </button>
           <br />
