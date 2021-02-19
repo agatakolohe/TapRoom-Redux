@@ -8,7 +8,7 @@
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 <img src="https://ih1.redbubble.net/image.2080344532.5562/st,small,507x507-pad,600x600,f8f8f8.jpg" width="200px" height="auto">
 </div>
-<h3 align="center">React Fundamentals | Initialized: 02-12-2021</h3>
+<h3 align="center">React Fundamentals | Initialized: 02-12-2021 | Revised: 02-18-2021</h3>
 <h4 align="center"> By Agata Kolodziej</h4>
 
 ## Description
