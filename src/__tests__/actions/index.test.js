@@ -29,4 +29,8 @@ describe("TapRoom actions", () => {
   it("toggleForm should create TOGGLE_FORM action", () => {
     expect(actions.toggleForm()).toEqual({ type: "TOGGLE_FORM" });
   });
+
+  it("toggleEdit should create TOGGLE_EDIT action", () => {
+    expect(actions.toggleEdit()).toEqual({ type: "TOGGLE_EDIT" });
+  });
 });
