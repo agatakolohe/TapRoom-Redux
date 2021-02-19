@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hip Hops Tap Room
+# Hip Hops Tap Room Redux REMIX
 
 </div>
 
@@ -8,12 +8,13 @@
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 <img src="https://ih1.redbubble.net/image.2080344532.5562/st,small,507x507-pad,600x600,f8f8f8.jpg" width="200px" height="auto">
 </div>
-<h3 align="center">React Fundamentals | Initialized: 02-12-2021 | Revised: 02-18-2021</h3>
+<h3 align="center">React with Redux| Initialized: 02-19-2021</h3>
 <h4 align="center"> By Agata Kolodziej</h4>
 
 ## Description
 
-Thirteenth independent project for Epicodus to demonstrate my understanding of React Fundamentals. This is a basic React application that uses local and shared state with full CRUD functionality. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
+Fourteenth independent project for Epicodus to demonstrate my understanding of React with Redux. This is a basic React application with full CRUD functionality. All state is handled by Redux. All reducers and actions have been tested. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Action creators and constants are implemented to avoid bugs. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
+TODO
 
 <div align="center">
 
@@ -136,7 +137,9 @@ No known bugs
 
 ## Support and Contact Details
 
-You can use console.log() statements and `debugger` to debug React applications. [React Developer Tools](https://react-devtools-tutorial.now.sh/) is available for both [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and Firefox. If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
+You can use console.log() statements and `debugger` to debug React/Redux applications. [React Developer Tools](https://react-devtools-tutorial.now.sh/) is available for both [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and Firefox. If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
+
+TODO add reduc dev tools info
 
 ## Technologies Used
 
@@ -146,10 +149,13 @@ You can use console.log() statements and `debugger` to debug React applications.
 - `npx create-react-app`
 - Git | GitHub
 - JavaScript ES6
+- Jest
 - JSX
 - Node
 - npm
 - React
+- Redux
+- [Unsplace](https://unsplash.com/)
 - VS Code
 - webpack
 
