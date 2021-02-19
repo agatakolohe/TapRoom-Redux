@@ -85,6 +85,6 @@ describe("rootReducer", () => {
       type: "TOGGLE_EDIT",
     };
     store.dispatch(action);
-    expect(store.getState().editing).toEqual(editingReducer(true, action));
+    expect(store.getState().editing).toEqual(editingReducer(undefined, action));
   });
 });
