@@ -48,4 +48,25 @@ describe("rootReducer", () => {
       kegListReducer(undefined, action)
     );
   });
+
+  test("Check that DELETE_KEG action works for kegListReducer and root reducer", () => {
+    const currentState = {
+      1: {
+        name: "Tricerahops",
+        brand: "Ninkasi",
+        price: "40",
+        abv: "7",
+        pintQuantity: "100",
+        id: 1,
+      },
+    };
+    const action = {
+      type: "DELETE_KEG",
+      id: 1,
+    };
+    store.dispatch(action);
+    expect(store.getState().masterKegList).toEqual(
+      kegListReducer(currentState, { type: null })
+    );
+  });
 });
