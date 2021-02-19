@@ -32,4 +32,20 @@ describe("rootReducer", () => {
       editingReducer(undefined, { type: null })
     );
   });
+
+  test("Check that ADD_KEG action works for kegListReducer and root reducer", () => {
+    const action = {
+      type: "ADD_KEG",
+      name: "Hoptimum",
+      brand: "Sierra Nevada",
+      price: "30",
+      abv: "10",
+      pintQuantity: "100",
+      id: 1,
+    };
+    store.dispatch(action);
+    expect(store.getState().masterKegList).toEqual(
+      kegListReducer(undefined, { type: null })
+    );
+  });
 });
