@@ -1,6 +1,25 @@
 import kegListReducer from "../../reducers/keg-list-reducer";
 
 describe("kegListReducer", () => {
+  const currentState = {
+    1: {
+      name: "Tricerahops",
+      brand: "Ninkasi",
+      price: "40",
+      abv: "7",
+      pintQuantity: "100",
+      id: 1,
+    },
+    2: {
+      name: "Yacht Rocket",
+      brand: "Urban Family",
+      price: "60",
+      abv: "5",
+      pintQuantity: "100",
+      id: 2,
+    },
+  };
+
   let action;
   const kegData = {
     name: "Hoptimum",
@@ -34,6 +53,23 @@ describe("kegListReducer", () => {
         abv,
         pintQuantity,
         id,
+      },
+    });
+  });
+
+  test("Should successfully delete a keg", () => {
+    action = {
+      type: "DELETE_KEG",
+      id: 1,
+    };
+    expect(kegListReducer(currentState, action)).toEqual({
+      2: {
+        name: "Yacht Rocket",
+        brand: "Urban Family",
+        price: "60",
+        abv: "5",
+        pintQuantity: "100",
+        id: 2,
       },
     });
   });
