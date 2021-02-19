@@ -13,7 +13,7 @@
 
 ## Description
 
-Fourteenth independent project for Epicodus to demonstrate my understanding of React with Redux. This is a basic React application with full CRUD functionality. All state is handled by Redux. All reducers and actions have been tested. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Action creators and constants are implemented to avoid bugs. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
+Fourteenth independent project for Epicodus to demonstrate my understanding of React with Redux. This is a basic React application with full CRUD functionality. Keg list, forms, and editing states are handled by Redux. All reducers and actions have been tested. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Action creators and constants are implemented to avoid bugs. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
 TODO
 
 <div align="center">
