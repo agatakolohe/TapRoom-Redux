@@ -5,6 +5,7 @@ import KegDetail from "./KegDetail";
 import EditKegForm from "./EditKegForm";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
+import * as a from "./../actions";
 
 const centerAlign = {
   textAlign: "center",
@@ -22,20 +23,9 @@ class KegControl extends React.Component {
   //add new keg to list
   handleAddingNewKegtoList = (newKeg) => {
     const { dispatch } = this.props;
-    const { id, name, brand, price, abv, pintQuantity } = newKeg;
-    const action = {
-      type: "ADD_KEG",
-      id,
-      name,
-      brand,
-      price,
-      abv,
-      pintQuantity,
-    };
+    const action = a.addKeg(newKeg);
     dispatch(action);
-    const action2 = {
-      type: "TOGGLE_FORM",
-    };
+    const action2 = a.toggleForm();
     dispatch(action2);
   };
   //select a keg
@@ -46,38 +36,23 @@ class KegControl extends React.Component {
   //delete keg
   handleDeletingKeg = (id) => {
     const { dispatch } = this.props;
-    const action = {
-      type: "DELETE_KEG",
-      id,
-    };
+    const action = a.deleteKeg(id);
     dispatch(action);
     this.setState({ selectedKeg: null });
   };
   //edit keg
   handleEditClick = () => {
     const { dispatch } = this.props;
-    const action = {
-      type: "TOGGLE_EDIT",
-    };
+    const action = a.toggleEdit();
     dispatch(action);
   };
   //edit keg list
   handleEditingKegInList = (kegToEdit) => {
     const { dispatch } = this.props;
     const { id, name, brand, price, abv, pintQuantity } = kegToEdit;
-    const action = {
-      type: "ADD_KEG",
-      id,
-      name,
-      brand,
-      price,
-      abv,
-      pintQuantity,
-    };
+    const action = a.addKeg(kegToEdit);
     dispatch(action);
-    const action2 = {
-      type: "TOGGLE_EDIT",
-    };
+    const action2 = a.toggleEdit();
     dispatch(action2);
     this.setState({
       selectedKeg: null,
@@ -97,9 +72,7 @@ class KegControl extends React.Component {
       });
     } else {
       const { dispatch } = this.props;
-      const action = {
-        type: "TOGGLE_FORM",
-      };
+      const action = a.toggleForm();
       dispatch(action);
     }
   };
