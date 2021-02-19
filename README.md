@@ -8,13 +8,12 @@
 <img src="https://github.com/agatakolohe.png" width="200px" height="auto" >
 <img src="https://ih1.redbubble.net/image.2080344532.5562/st,small,507x507-pad,600x600,f8f8f8.jpg" width="200px" height="auto">
 </div>
-<h3 align="center">React with Redux| Initialized: 02-19-2021</h3>
+<h3 align="center">React with Redux | Initialized: 02-12-2021 | Remixed: 02-19-2021</h3>
 <h4 align="center"> By Agata Kolodziej</h4>
 
 ## Description
 
 Fourteenth independent project for Epicodus to demonstrate my understanding of React with Redux. This is a basic React application with full CRUD functionality. Keg list, forms, and editing states are handled by Redux. All reducers and actions have been tested. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Action creators and constants are implemented to avoid bugs. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
-TODO
 
 <div align="center">
 
@@ -44,12 +43,13 @@ TODO
 
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository](https://github.com/agatakolohe/TapRoom.git)
+- Click on the link to my repository: [My Repository](https://github.com/agatakolohe/TapRoom-Redux.git)
 - Click on the green "Code" button and copy the repository URL
-- Open your terminal and use the command `git clone https://github.com/agatakolohe/TapRoom.git` into the directory you would like to clone the repository
+- Open your terminal and use the command `git clone https://github.com/agatakolohe/TapRoom-Redux.git` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
   - Open terminal and navigate to tap-room directory
   - Use the command `npm install` to download and install all necessary packages for the project to function
+  - Use the commang `npm install redux@4.0.5 react-redux@7.1.3`
 
 <details>
 <summary>Getting Started with Create React App</summary>
@@ -125,6 +125,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 </details>
 
+### `npm test`
+
+- in TapRoom directory run the command `npm test` to test actions and reducers
+
 #### View In Browser
 
 - To Build and view in browser
@@ -138,8 +142,6 @@ No known bugs
 ## Support and Contact Details
 
 You can use console.log() statements and `debugger` to debug React/Redux applications. [React Developer Tools](https://react-devtools-tutorial.now.sh/) is available for both [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) and Firefox. If any errors or bugs occur please email me, <agatakolohe@gmail.com>.
-
-TODO add reduc dev tools info
 
 ## Technologies Used
 
