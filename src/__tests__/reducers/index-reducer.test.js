@@ -1,7 +1,7 @@
 import rootReducer from "../../reducers/index";
 import { createStore } from "redux";
 import kegListReducer from "../../reducers/keg-list-reducer";
-import formVisibleReducer from "../../reducers/form-visible-reducer";
+import kegFormVisibleReducer from "../../reducers/form-visible-reducer";
 import editingReducer from "../../reducers/editing-reducer";
 
 let store = createStore(rootReducer);
@@ -10,7 +10,7 @@ describe("rootReducer", () => {
   test("Should return default state if no action type is recognized", () => {
     expect(rootReducer({}, { type: null })).toEqual({
       masterKegList: {},
-      formVisibleOnPage: false,
+      kegFormVisibleOnPage: false,
       editing: false,
     });
   });
@@ -21,9 +21,9 @@ describe("rootReducer", () => {
     );
   });
 
-  test("Check that initial state of formVisibleReducer matches root reducer", () => {
-    expect(store.getState().formVisibleOnPage).toEqual(
-      formVisibleReducer(undefined, { type: null })
+  test("Check that initial state of kegFormVisibleReducer matches root reducer", () => {
+    expect(store.getState().kegFormVisibleOnPage).toEqual(
+      kegFormVisibleReducer(undefined, { type: null })
     );
   });
 
@@ -70,13 +70,13 @@ describe("rootReducer", () => {
     );
   });
 
-  test("Check that TOGGLE_FORM action works for formVisibleReducer and root reducer", () => {
+  test("Check that TOGGLE_FORM action works for kegFormVisibleReducer and root reducer", () => {
     const action = {
       type: "TOGGLE_FORM",
     };
     store.dispatch(action);
-    expect(store.getState().formVisibleOnPage).toEqual(
-      formVisibleReducer(undefined, action)
+    expect(store.getState().kegFormVisibleOnPage).toEqual(
+      kegFormVisibleReducer(undefined, action)
     );
   });
 
