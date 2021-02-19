@@ -20,4 +20,10 @@ describe("rootReducer", () => {
       kegListReducer(undefined, { type: null })
     );
   });
+
+  test("Check that initial state of formVisibleReducer matches root reducer", () => {
+    expect(store.getState().formVisibleOnPage).toEqual(
+      formVisibleReducer(true, { type: null })
+    );
+  });
 });
