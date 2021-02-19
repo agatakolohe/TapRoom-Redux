@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 function KegList(props) {
   const listStyles = {
     color: "white",
+    backgroundColor: "#576f48",
+    padding: "2%",
+    opacity: "0.8",
   };
   const { kegList, onClickingSellPint } = props;
   return (
