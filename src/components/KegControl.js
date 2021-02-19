@@ -4,6 +4,7 @@ import KegList from "./KegList";
 import KegDetail from "./KegDetail";
 import EditKegForm from "./EditKegForm";
 import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 const centerAlign = {
   textAlign: "center",
@@ -46,9 +47,7 @@ class KegControl extends React.Component {
   };
   //select a keg
   handleChangingSelectedKeg = (id) => {
-    const selectedKeg = this.state.masterKegList.filter(
-      (keg) => keg.id === id
-    )[0];
+    const selectedKeg = this.props.masterKegList[id];
     this.setState({ selectedKeg: selectedKeg });
   };
   //delete keg
@@ -56,6 +55,7 @@ class KegControl extends React.Component {
     const { dispatch } = this.props;
     const action = {
       type: "DELETE_KEG",
+      id,
     };
     dispatch(action);
     this.setState({ selectedKeg: null });
@@ -92,11 +92,9 @@ class KegControl extends React.Component {
       selectedKeg: null,
     });
   };
-  //sell pint(decrease pint quantity) change state to props?
+  //sell pint(decrease pint quantity)
   handleSellPint = (id) => {
-    const selectedKeg = this.state.masterKegList.filter(
-      (keg) => keg.id === id
-    )[0];
+    const selectedKeg = this.props.masterKegList[id];
     selectedKeg.pintQuantity--;
     this.setState({ selectedKeg: null });
   };
@@ -124,7 +122,8 @@ class KegControl extends React.Component {
     let currentVisibleState = null;
     let buttonText = null;
 
-    if (this.state.editing) {
+    if (this.props.editing) {
+      //change this state to props?
       currentVisibleState = (
         <EditKegForm
           keg={this.state.selectedKeg}
@@ -141,7 +140,7 @@ class KegControl extends React.Component {
         />
       );
       buttonText = "Return to Keg List";
-    } else if (this.state.kegFormVisibleOnPage) {
+    } else if (this.props.kegFormVisibleOnPage) {
       currentVisibleState = (
         <NewKegForm onNewKegCreation={this.handleAddingNewKegtoList} />
       );
@@ -149,7 +148,7 @@ class KegControl extends React.Component {
     } else {
       currentVisibleState = (
         <KegList
-          kegList={this.state.masterKegList}
+          kegList={this.props.masterKegList}
           onKegSelection={this.handleChangingSelectedKeg}
           onClickingSellPint={this.handleSellPint}
         />
@@ -176,7 +175,18 @@ class KegControl extends React.Component {
     );
   }
 }
-
-KegControl = connect()(KegControl);
+KegControl.propTypes = {
+  masterKegList: PropTypes.object,
+  kegFormVisibleOnPage: PropTypes.bool,
+  editing: PropTypes.bool,
+};
+const mapStateToProps = (state) => {
+  return {
+    masterKegList: state.masterKegList,
+    kegFormVisibleOnPage: state.kegFormVisibleOnPage,
+    editing: state.editing,
+  };
+};
+KegControl = connect(mapStateToProps)(KegControl);
 
 export default KegControl;
