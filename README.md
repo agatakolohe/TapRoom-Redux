@@ -49,7 +49,7 @@ Fourteenth independent project for Epicodus to demonstrate my understanding of R
 - Open in text editor to view code and make changes
   - Open terminal and navigate to tap-room directory
   - Use the command `npm install` to download and install all necessary packages for the project to function
-  - Use the commang `npm install redux@4.0.5 react-redux@7.1.3`
+  - Use the command `npm install redux@4.0.5 react-redux@7.1.3` to install redux
 
 <details>
 <summary>Getting Started with Create React App</summary>

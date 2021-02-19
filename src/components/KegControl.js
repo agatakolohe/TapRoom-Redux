@@ -49,7 +49,7 @@ class KegControl extends React.Component {
   //edit keg list
   handleEditingKegInList = (kegToEdit) => {
     const { dispatch } = this.props;
-    const { id, name, brand, price, abv, pintQuantity } = kegToEdit;
+    // const { id, name, brand, price, abv, pintQuantity } = kegToEdit;
     const action = a.addKeg(kegToEdit);
     dispatch(action);
     const action2 = a.toggleEdit();

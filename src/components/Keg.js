@@ -5,11 +5,11 @@ function Keg(props) {
   return (
     <React.Fragment>
       <div onClick={() => props.whenKegClicked(props.id)}>
-        <h2>Name: {props.name}</h2>
-        <h3>Brand: {props.brand}</h3>
-        <h4>ABV: {props.abv}</h4>
+        <h4>Name: {props.name}</h4>
+        <h5>Brand: {props.brand}</h5>
+        <h5>ABV: {props.abv}</h5>
         <hr />
-        <h5>
+        <h6>
           <span
             style={{
               color: "orange",
@@ -20,9 +20,9 @@ function Keg(props) {
           >
             Price: ${props.price}
           </span>
-        </h5>
+        </h6>
         <hr />
-        <h4>
+        <h5>
           Pints Left in Keg:{" "}
           {props.pintQuantity > 0 ? (
             props.pintQuantity
@@ -32,7 +32,7 @@ function Keg(props) {
               Can I kick it? (Yes, you can!) (Out of Stock)
             </div>
           )}
-        </h4>
+        </h5>
       </div>
       <button
         className="btn btn-success"

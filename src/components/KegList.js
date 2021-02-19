@@ -9,10 +9,23 @@ function KegList(props) {
     padding: "2%",
     opacity: "0.8",
   };
+  const headerListStyle = {
+    textAlign: "center",
+    color: "#2b3724",
+  };
   const { kegList, onClickingSellPint } = props;
   return (
     <React.Fragment>
       <div style={listStyles}>
+        <div style={headerListStyle}>
+          <h1>
+            <strong>Keg Flow</strong>
+          </h1>
+          <h5>
+            <strong>(Current Kegs)</strong>
+          </h5>
+          <hr />
+        </div>
         {Object.values(props.kegList).map((keg) => (
           <Keg
             whenKegClicked={props.onKegSelection}
