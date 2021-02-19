@@ -23,7 +23,7 @@ describe("rootReducer", () => {
 
   test("Check that initial state of formVisibleReducer matches root reducer", () => {
     expect(store.getState().formVisibleOnPage).toEqual(
-      formVisibleReducer(true, { type: null })
+      formVisibleReducer(undefined, { type: null })
     );
   });
 });
