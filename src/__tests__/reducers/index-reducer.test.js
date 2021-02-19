@@ -45,7 +45,7 @@ describe("rootReducer", () => {
     };
     store.dispatch(action);
     expect(store.getState().masterKegList).toEqual(
-      kegListReducer(undefined, { type: null })
+      kegListReducer(undefined, action)
     );
   });
 });
