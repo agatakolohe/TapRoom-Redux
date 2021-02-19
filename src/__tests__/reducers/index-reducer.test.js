@@ -29,7 +29,7 @@ describe("rootReducer", () => {
 
   test("Check that initial state of editingReducer matches root reducer", () => {
     expect(store.getState().editing).toEqual(
-      editingReducer(true, { type: null })
+      editingReducer(undefined, { type: null })
     );
   });
 });
