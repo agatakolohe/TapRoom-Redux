@@ -19,7 +19,6 @@ class KegControl extends React.Component {
       selectedKeg: null,
     };
   }
-
   //add new keg to list
   handleAddingNewKegtoList = (newKeg) => {
     const { dispatch } = this.props;

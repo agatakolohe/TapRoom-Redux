@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hip Hops Tap Room Redux REMIX
+# HipHops Tap Room Redux REMIX
 
 </div>
 
@@ -13,7 +13,7 @@
 
 ## Description
 
-Fourteenth independent project for Epicodus to demonstrate my understanding of React with Redux. This is a basic React application with full CRUD functionality. Keg list, forms, and editing states are handled by Redux. All reducers and actions have been tested. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Action creators and constants are implemented to avoid bugs. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
+It's the remix ya'll! Fourteenth independent project for Epicodus to demonstrate my understanding of React with Redux. This is a basic React application with full CRUD functionality. Keg list, forms, and editing states are handled by Redux. All reducers and actions have been tested. I created the skeleton of the React app by using `create-react-app`. Project design was structured based on functional and class components. Action creators and constants are implemented to avoid bugs. Components were built using JSX. This is a Keg Tracker app for "Hip Hops", a hip hop themed brewery. A user can create a keg, read all kegs created in a list, view keg details, "buy pints"/decrease the pint quantity of the keg, update keg details, and delete a keg.
 
 <div align="center">
 
@@ -127,12 +127,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### `npm test`
 
-- in TapRoom directory run the command `npm test` to test actions and reducers
+- In TapRoom directory run the command `npm test` to test actions and reducers
 
 #### View In Browser
 
 - To Build and view in browser
-  - Navigate to tap-room directory and use the command `npm start`
+  - Navigate to TapRoom directory and use the command `npm start`
   - Enjoy the application!
 
 ## Known Bugs
@@ -157,7 +157,7 @@ You can use console.log() statements and `debugger` to debug React/Redux applica
 - npm
 - React
 - Redux
-- [Unsplace](https://unsplash.com/)
+- [Unsplash](https://unsplash.com/)
 - VS Code
 - webpack
 

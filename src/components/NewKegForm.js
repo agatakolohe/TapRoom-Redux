@@ -19,7 +19,7 @@ function NewKegForm(props) {
     <React.Fragment>
       <ReusableForm
         formSubmissionHandler={handleNewKegFormSubmission}
-        buttonText="So Fresh, So Clean (Submit)"
+        buttonText="So Fresh, So Green Green (Submit)"
       />
     </React.Fragment>
   );
